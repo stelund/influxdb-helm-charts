@@ -172,3 +172,7 @@ spec:
       tolerations:
         {{ toYaml . | nindent 8 | trim }}
       {{- end }}
+
+      {{- if .Values.priorityClassName }}
+      priorityClassName: {{ .Values.priorityClassName | quote }}
+      {{- end }}

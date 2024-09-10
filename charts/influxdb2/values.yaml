@@ -47,6 +47,11 @@ tolerations: []
 ##
 affinity: {}
 
+## Pod Priority Class for scheduling order and preemtion
+## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/
+##
+priorityClassName: ""
+
 securityContext: {}
 
 ## Customize liveness, readiness and startup probes
